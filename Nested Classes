@@ -1,0 +1,16 @@
+// inner classes are known as nested classes
+class Outer{
+    class Inner{
+        public void show(){
+            System.out.println("inner show function");
+        }
+    }
+}
+class Check{
+    public static void main(String[] args)
+    {
+            Outer ob=new Outer();
+            Outer.Inner in = ob.new Inner();
+            in.show();
+    }
+}
